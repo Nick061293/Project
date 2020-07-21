@@ -1,6 +1,9 @@
 $(document).ready(function() {
-    //abrir pag list-diciplinas.html dentro do index
 
-    $('#conteudo').load('src/disciplinas/visao/list-disciplinas.html')
+    $('#add').click(function(e) {
+        e.preventDefault()
+        $('#conteudo').empty()
+        $('#conteudo').load('src/disciplinas/visao/add-disc.html')
+    });
 
 })

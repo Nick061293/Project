@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-10 col-md-6">
+        <div class="card shadow">
+            <div class="card-header">
+                <h4 class="text-info">Cadastro de Disciplina</h4>
+            </div>
+            <div class="card-body">
+                <form action="src/disciplinas/modelo/add-disc.php" method="POST">
+                    <div class="form-group">
+                        <label>Nome da Disciplina:</label>
+                        <input type="text" name="Nome" id="Nome" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Nome do Professor:</label>
+                        <input type="text" name="Professor" id="Professor" class="form-control">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 col-md-6">
+                            <select name="Nota" id="Nota" class="form-control">
+                                <option>Selecione a Nota:</option>
+                                <option value="MB">Muito Bom</option>
+                                <option value="B">Bom</option>
+                                <option value="R">Regular</option>
+                                <option value="I">Insatisfatório</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group justfy-content-end">
+                        <div class="col-10 col-md-6">
+                            <button class="btn btn-success btn-block"><i class="mdi mdi-save-content"></i>Salvar Alterações</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
