@@ -8,9 +8,9 @@ $(document).ready(function() {
             for (var i = 0; i < dados.length; i++) {
                 let resultado = `
             <tr>
-            <td class="text-center d-none d-sm-block">${dados[i].Id}</td>
+            <td class="text-center">${dados[i].Id}</td>
             <td>${dados[i].Nome}</td>
-            <td class="d-none d-sm-block">${dados[i].Professor}</td>
+            <td>${dados[i].Professor}</td>
             <td class="text-center">${dados[i].Nota}</td>
             <td class="text-center">
                 <button class="btn btn-info btn-sm btn-view"><i class="mdi mdi-eye"></i></button>
@@ -23,6 +23,8 @@ $(document).ready(function() {
                 $('tbody').append(resultado)
 
             }
+
+            $('body').append('<script src="src/disciplinas/controle/view-disc.js"></script>')
         }
     })
 })
