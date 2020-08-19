@@ -1,5 +1,17 @@
+function btnClose() {
+    //monitorar click na classe btnClose
+    $('.btn-close').click(function(e) {
+        e.preventDefault()
+
+        $('#form').empty()
+        $('#form').hide(2000)
+        $('.row').show(2000)
+    })
+}
+
 $(document).ready(function() {
     //click nos botoes com as classes
+
     $('.btn-view').click(function(e) {
         e.preventDefault()
 
@@ -12,6 +24,9 @@ $(document).ready(function() {
             data: dados,
             url: 'src/disciplinas/modelo/view-disc.php',
             success: function(dados) {
+
+                $('#form').show(3000)
+                $('.row').hide(3000)
 
                 $('#form').load('src/disciplinas/visao/add-disc.html', function() {
                     $('#h4').empty()
@@ -26,6 +41,7 @@ $(document).ready(function() {
                     $('#Nota').empty()
                     $('#Nota').append(`<option>${dados[0].Nota}</option>`)
 
+                    btnClose()
 
                 })
             }

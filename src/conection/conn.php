@@ -3,12 +3,12 @@
 
 //demonstre todos os erros e alertas quanto ao meu codigo e interacao com o banco de dados
 
-    ini_set('display_erros', true);
+    ini_set('display_errors', true);
     error_reporting(E_ALL);
 
     //variaveis para o bd
     $hostname = "localhost";
-    $database = "MinhasNotas";
+    $database = "minhasnotas";
     $username = "root";
     $password = "";
 
